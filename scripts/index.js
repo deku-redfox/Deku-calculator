@@ -136,8 +136,9 @@ function getResult() {
 
 function clearE() {
     const newStr = display.value.substring(0, display.value.length - 1)
+    console.log(newStr);
     display.value = newStr
-    display.value = display.value != '' & '0' 
+    display.value = display.value || '0' 
 }
 
 function clear() {
