@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    
+    <div class="centerZone">
+
+        <div class="container">
+            
+            <div class="head">
+                <div class="menu clickable">
+                    <button class="btn-menu">
+                        <img src="icons/menu.png" alt="menu">
+                    </button>
+                    <p class="menu-text">History</p>
+                </div>
+            </div>
+
+            <div class="displayBox">
+                <input type="text" class="js-result" value="0">
+            </div>
+
+            <div class="board">
+
+                <div class="row">
+                    <button class="grey js-action">C</button>
+                    <button class="grey js-action">+/-</button>
+                    <button class="grey">%</button>
+                    <button class="yellow js-operator">+</button>
+                </div>
+
+                <div class="row">
+                    <button class="js-number">7</button>
+                    <button class="js-number">8</button>
+                    <button class="js-number">9</button>
+                    <button class="yellow js-operator">x</button>
+                </div>
+
+                <div class="row">
+                    <button class="js-number">4</button>
+                    <button class="js-number">5</button>
+                    <button class="js-number">6</button>
+                    <button class="yellow js-operator">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="js-number">1</button>
+                    <button class="js-number">2</button>
+                    <button class="js-number">3</button>
+                    <button class="yellow js-operator">/</button>
+                </div>
+
+                <div class="row">
+                    <button class="js-action">CE</button>
+                    <button class="js-number">0</button>
+                    <button class="js-number">.</button>
+                    <button class="yellow js-equal">=</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+        <script src="scripts/index.js"></script>
+</body>
+</html>

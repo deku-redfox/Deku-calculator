@@ -1,0 +1,83 @@
+:root{
+
+    /** *** COLORS *** **/
+    --backgroundColor: black;
+    --screenBack: rgb(208, 214, 207);
+    --primaryColor: rgba(163, 255, 227, 0.075);
+    --secondaryColor: rgb(191, 190, 196);
+    --thirdColor: rgb(255, 178, 35);
+
+    --btnTextColor: white;
+    --btnHoverColor: white;
+    --highligthText: rgb(0, 0, 0);
+}
+
+
+/** *** RESET STYLES *** **/
+
+*{ 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: arial;
+    font-size: 20px;
+    color: white;
+}
+
+img{ filter: invert(100%); }
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    border: none;
+    outline: none;
+    color: var(--btnTextColor);
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 0.15s;
+}
+
+button:hover{
+    background-color: var(--btnHoverColor);
+    color: var(--highligthText);
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--secondaryColor);
+    max-width: 285px;
+}
+
+
+/** *** REUSABLE STYLES *** **/
+
+.grey {
+    background-color: var(--secondaryColor);
+    --btnTextColor: black;
+    --btnHoverColor: rgb(220, 218, 228);
+}
+
+.yellow { 
+    background-color: var(--thirdColor);
+    --btnHoverColor: rgb(248, 221, 172);
+    --highligthText: rgb(255, 178, 35);
+} 
+
+button:not(.btn-menu){
+    --ratio: 1;
+    width: calc(var(--ratioWd, auto) * 1%);
+    height: calc(var(--ratioHg) * 1px);
+}
